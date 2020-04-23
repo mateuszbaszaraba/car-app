@@ -12,10 +12,18 @@
 </template>
 
 <script>
-export default {
+import Header from './components/Header';
 
+export default {
+  components: {
+    appHeader: Header
+  }
 }
 </script>
 
 <style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
+}
 </style>
