@@ -5,8 +5,8 @@
         </div>
         <div class="menu">
             <ul>
-                <router-link tag="li" to="/">Home</router-link>
-                <router-link tag="li" to="/car">Cars</router-link>
+                <router-link tag="li" to="/" active-class="active" exact>Home</router-link>
+                <router-link tag="li" to="/car" active-class="active">Cars</router-link>
             </ul>
         </div>
     </header>
@@ -24,6 +24,10 @@ $colors: (
   @return map-get($colors, $color-name)
 }
 
+.active {
+  color: red
+}
+
 header {
   background-color: color(blackColor);
   width: 100vw;
@@ -35,28 +39,31 @@ header {
 .logo {
   width: 30vw;
   height: 8vh;
-  background-color: red;
 }
 
 .menu {
   width: 70vw;
   height: 8vh;
-  background-color: green;
 }
 
 .menu > ul {
-  width: 50vw;
+  width: 20vw;
   height: 8vh;
-  background-color: indigo;
   margin: 0;
+  float: right;
+  display: flex;
+  justify-content: space-around
 }
 
 ul > li {
   display: inline-block;
-  background-color: lightcoral;
   padding: 2vh 2vw 2vh 2vw;
   margin: 0;
-
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  cursor: pointer;
 }
+
 
 </style>
