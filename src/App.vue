@@ -23,6 +23,7 @@ export default {
 
 <style lang="scss">
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }

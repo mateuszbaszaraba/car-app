@@ -1,7 +1,10 @@
 <template>
     <header>
         <div class="logo">
-
+          <div class="logoimg">
+            <router-link tag="div" to="/"><h1><span style="color: red">Car</span><span style="color: white">Shop</span></h1></router-link>
+            <!-- <h1><span style="color: red">Car</span><span style="color: white">Shop</span></h1> -->
+          </div>
         </div>
         <div class="menu">
             <ul>
@@ -41,18 +44,32 @@ header {
   height: 8vh;
 }
 
+.logoimg {
+  width: 13.8vw;
+  height: 8vh;
+  margin: 0;
+  padding-top: 0;
+  cursor: pointer;
+}
+
+.logoimg h1 {
+  margin: 0;
+  padding: 1vh 0 1.2vh 2vw;
+}
+
 .menu {
   width: 70vw;
   height: 8vh;
 }
 
 .menu > ul {
-  width: 20vw;
+  width: 18vw;
   height: 8vh;
   margin: 0;
   float: right;
   display: flex;
-  justify-content: space-around
+  justify-content: space-between;
+  margin-right: 3vw;
 }
 
 ul > li {
@@ -60,8 +77,9 @@ ul > li {
   padding: 2vh 2vw 2vh 2vw;
   margin: 0;
   color: white;
+  transition: 0.2s;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 23px;
   cursor: pointer;
 }
 

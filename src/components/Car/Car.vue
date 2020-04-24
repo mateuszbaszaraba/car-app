@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <p>Car Page</p>
-        <router-link to="/">Test</router-link>
+    <div class="car-page">
+        
     </div>
 </template>
