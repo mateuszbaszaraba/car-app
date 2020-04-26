@@ -25,7 +25,7 @@ export const routes = [
     { path: '/car', component: Car, children: [
         { path: '', component: CarGrid },
         { path: ':id', component: CarDetails },
-        { path: ':id/edit', component: CarEdit },
+        { path: ':id/edit', component: CarEdit, name: 'carEdit' },
     ] },
     { path: '*', redirect: { name: 'home' } }
 ]

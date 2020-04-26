@@ -1,6 +1,6 @@
 <template>
     <div class="car-page">
-        <h1>Choose your car</h1>
+        <h1>Car Page</h1>
         <router-view></router-view>
     </div>
 </template>
