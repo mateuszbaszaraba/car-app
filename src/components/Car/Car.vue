@@ -1,7 +1,8 @@
 <template>
     <div class="car-page">
         <h1>Car Page</h1>
-        <p>test test master</p>
+        <p>Developing version</p>
+        <p>test test commit</p>
         <router-view></router-view>
     </div>
 </template>
